@@ -1,0 +1,63 @@
+body{
+    background-color:rgb(190, 244, 220);
+    background-color: rgb(207, 207, 237);
+    text-align: center;
+    margin:0px;
+  }
+h1{
+    color: rgb(1, 1, 20);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+}
+.principal{
+  padding: 0%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+.fitoterapia{
+  padding: 0%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+.hidroterapia{
+  padding: 0%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+.remedios{
+  padding: 0%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+.smi{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+}
+.psmi{
+  border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+    width: 850px;
+    height: 130px;
+    padding: 10px;
+}
+.sanatorio{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+}
+.psanatorio{
+  border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+    width: 850px;
+    height: 100px;
+    padding: 10px;
+}
