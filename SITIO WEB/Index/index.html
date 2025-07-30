@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanatorio Eden - Atención médica integral con tratamientos naturales, fitoterapia e hidroterapia">
+    <title>Sanatorio Eden - Salud Integral y Tratamientos Naturales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logos">
+                <img src="images/logos/unicol.jpg" alt="Logo Unicol" class="logo-unicol">
+                <img src="images/logos/sanatorio.png" alt="Logo Sanatorio Eden" class="logo-main">
+            </div>
+            <h1 class="main-title">Sanatorio Eden</h1>
+            
+            <!-- Navegación principal -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="pages/nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="pages/fitoterapia.html" class="nav-link">Fitoterapia</a></li>
+                    <li><a href="pages/hidroterapia.html" class="nav-link">Hidroterapia</a></li>
+                    <li><a href="pages/remedios.html" class="nav-link">Remedios Naturales</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Sección Misión -->
+        <section class="section mision-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">MISIÓN</h2>
+                <div class="section-content">
+                    <p class="section-text">
+                        En el Sanatorio Edén, nos dedicamos a brindar atención médica integral y personalizada, basada en altos estándares de calidad y calidez humana. Nuestro compromiso es promover la salud, prevenir enfermedades y ofrecer tratamientos innovadores en un entorno seguro y confortable, donde el paciente es el centro de nuestra labor. Guiados por valores como la ética cristiana, la empatía y la excelencia, trabajamos para ser referentes en bienestar y recuperación, acompañando a cada persona en su camino hacia una vida plena y saludable.
+                    </p>
+                    <img src="images/content/mision.jpg" alt="Misión del Sanatorio Eden" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Visión -->
+        <section class="section vision-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">VISIÓN</h2>
+                <div class="section-content">
+                    <p class="section-text">
+                        Aspiramos a ser reconocidos como el centro de salud líder en nuestra región, destacando por nuestra excelencia médica, innovación tecnológica y atención humanizada. Buscamos transformar la experiencia en salud, integrando prácticas sostenibles y un equipo multidisciplinario comprometido con el cuidado integral de nuestros pacientes. En el Sanatorio Edén, envisionamos un futuro donde la prevención, la investigación y el trato empático nos permitan ser sinónimo de confianza, bienestar y calidad de vida para nuestra comunidad.
+                    </p>
+                    <img src="images/content/vision.jpg" alt="Visión del Sanatorio Eden" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="contact-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Hablar con un Profesional</h2>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre"
+                            class="form-input" 
+                            placeholder="Escribe tu nombre completo" 
+                            required 
+                            minlength="3"
+                            aria-describedby="nombre-error"
+                        >
+                        <span class="error-message" id="nombre-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                        <input 
+                            type="date" 
+                            id="fecha" 
+                            name="fecha"
+                            class="form-input" 
+                            required
+                            aria-describedby="fecha-error"
+                        >
+                        <span class="error-message" id="fecha-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono" class="form-label">Número de teléfono</label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono"
+                            class="form-input" 
+                            placeholder="Número telefónico" 
+                            required
+                            pattern="[0-9]{8,15}"
+                            aria-describedby="telefono-error"
+                        >
+                        <span class="error-message" id="telefono-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            class="form-input" 
+                            placeholder="correo@ejemplo.com" 
+                            required
+                            aria-describedby="email-error"
+                        >
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            class="form-input" 
+                            placeholder="Mínimo 8 caracteres" 
+                            required 
+                            minlength="8"
+                            aria-describedby="password-error"
+                        >
+                        <span class="error-message" id="password-error"></span>
+                        <small class="form-hint">La contraseña debe tener al menos 8 caracteres</small>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Solicitar Consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content-wrapper">
+            <p>&copy; 2024 Sanatorio Eden. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

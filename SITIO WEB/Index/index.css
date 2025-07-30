@@ -1,0 +1,328 @@
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables para colores consistentes */
+:root {
+    --primary-bg: rgb(207, 207, 237);
+    --secondary-bg: rgb(190, 244, 220);
+    --banner-bg: #ededde;
+    --links-bg: rgb(19, 244, 220);
+    --border-color: #000000;
+    --text-color: #000000;
+    --form-bg: rgb(137, 108, 216);
+    --border-radius: 8px;
+}
+
+/* Configuración del body */
+body {
+    background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg));
+    text-align: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Banner principal mejorado */
+.banner {
+    background: var(--banner-bg);
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Contenedor de logos mejorado */
+.logos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logos corregidos */
+.unicol, .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.unicol:hover, .logo:hover {
+    transform: scale(1.05);
+}
+
+/* Título principal */
+h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Contenedor de enlaces mejorado */
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, var(--links-bg), #16a085);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo individual de enlaces */
+.nosotros, .fitoterapia, .hidroterapia, .remedios {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros:hover, .fitoterapia:hover, 
+.hidroterapia:hover, .remedios:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Enlaces mejorados */
+.enlaces a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #2c3e50;
+}
+
+/* Títulos de sección */
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Párrafos mejorados */
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.8;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+/* Secciones misión y visión mejoradas */
+.mision, .vision {
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    margin: 20px auto;
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    max-width: 900px;
+    min-height: 400px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.mision:hover, .vision:hover {
+    transform: scale(1.02);
+}
+
+/* Imágenes dentro de secciones */
+.mision img, .vision img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulario mejorado */
+.cuadro {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    margin: 20px auto;
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    min-height: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cuadro h2 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Estilo del formulario */
+.formulario {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+
+/* Labels del formulario */
+.pro {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 15px 0 8px 0;
+    color: white;
+    display: block;
+}
+
+/* Inputs del formulario mejorados */
+.formulario_input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+}
+
+.formulario_input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    transform: translateY(-2px);
+}
+
+.formulario_input:hover {
+    background: white;
+}
+
+/* Botón de envío mejorado */
+.formulario_input[type="submit"] {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.formulario_input[type="submit"]:hover {
+    background: linear-gradient(135deg, #c0392b, #a93226);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+}
+
+.formulario_input[type="submit"]:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .logos-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .enlaces {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .mision, .vision {
+        margin: 15px;
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    .cuadro {
+        margin: 15px;
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .unicol, .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .formulario_input {
+        font-size: 16px; /* Evita zoom en iOS */
+    }
+    
+    .cuadro {
+        padding: 15px;
+    }
+}
